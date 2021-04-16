@@ -1,0 +1,330 @@
+html {
+    background: #1d1d1d;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  
+  .title_page {
+    color: white;
+    font-size: 100px;
+    margin: 15px;
+  }
+  
+  .subtitle {
+    color: rgb(216, 216, 216);
+    font-size: 35px;
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .create_note {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 3px solid rgb(158, 158, 158);
+  }
+  
+  .box {
+    background: white;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 31px;
+  }
+  
+  .input_intro {
+    color: black;
+    font-size: 65px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 25px;
+  }
+  
+  textarea {
+    border: 2px solid;
+    padding: 25px;
+    font-size: 35px;
+    margin: 25px;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    width: 786px;
+    display: block;
+  }
+  
+  input {
+    font-size: 19px;
+    margin: 0px 25px;
+    width: 786px;
+    display: block;
+    padding: 25px;
+    border: 2px solid;
+  }
+  
+  textarea:hover,
+  input:hover {
+    border: 3px solid;
+    padding: 24px;
+  }
+  
+  .buttons {
+    margin: 25px;
+  }
+  
+  .add-btn,
+  .clear-btn {
+    color: #575757;
+    padding: 20px;
+    font-size: 18px;
+    margin-right: 20px;
+    border-radius: 13px;
+    border: 1px solid white;
+    display: inline-block;
+    background: rgb(218, 218, 218);
+  }
+  .add-btn {
+    margin-right: 20px;
+  }
+  
+  .add-btn:hover,
+  .clear-btn:hover {
+    color: black;
+    background: white;
+    border: 1px solid;
+  }
+  
+  .notes_lists {
+    padding: 15px;
+    display: flex;
+    justify-items: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .note {
+    background: #484848;
+    width: fit-content;
+    border-radius: 6px;
+    margin: 30px;
+    position: relative;
+  }
+  
+  .text_of_note {
+    border-bottom: 2px solid #009e8e;
+    padding: 15px;
+    margin-bottom: 0px;
+    color: #d6d6d6;
+    font-size: 42px;
+  }
+  
+  .date_of_note {
+    padding: 15px;
+    font-size: 20px;
+    color: #bebbbb;
+  }
+  
+  @media (max-width: 950px) {
+  
+    .title_page {
+      font-size: 80px;
+    }
+    
+    .subtitle{
+      font-size: 35px;
+    }
+  
+    .input_intro,.buttons{
+      margin: 20px;
+    }
+  
+    .input_intro{
+      font-size: 50px;
+    }
+  
+    textarea,input {
+      margin: 20px;
+      padding: 20px;
+      width: 600px;
+    }
+  
+    textarea:hover,input:hover {
+      border: 2px solid;
+      padding: 19px;
+    }
+  }
+  
+  @media (max-width: 735px){
+  
+    .title_page {
+      font-size: 60px;
+    }
+  
+    .subtitle {
+      font-size: 20px;
+    }
+  
+    textarea,input {
+      width: 450px;
+    }
+  
+    textarea:hover,input:hover {
+      border: 3px solid;
+      padding: 19px;
+    }
+  
+  }
+  
+  @media (max-height: 910px){
+    .title_page {
+      font-size: 80px;
+    }
+    
+    .subtitle{
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+  
+    .input_intro,.buttons{
+      margin: 15px;
+    }
+  
+    .input_intro{
+      font-size: 50px;
+    }
+  
+    textarea,input {
+      margin: 15px;
+      padding: 15px;
+      width: 600px;
+    }
+  
+    textarea:hover,input:hover {
+      border: 3px solid;
+      padding: 14px;
+    }
+  
+    .add-btn,.clear-btn{
+      padding: 14px;
+      font-size: 12px;
+      border-radius: 9px;
+    }
+  
+  }
+  
+  
+  @media (max-height: 815px){
+  
+    .title_page {
+      font-size: 60px;
+    }
+  
+    .subtitle {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+  
+    .input_intro{
+      font-size: 35px;
+    }
+    
+    textarea,input {
+      width: 450px;
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    textarea:hover,input:hover {
+      border: 3px solid;
+      padding: 9px;
+    }
+  
+  }
+  
+  @media (max-height: 760px){
+    .text_of_note{
+      font-size: 32px;
+    }
+    .delete_btn{
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-height: 680px){
+    .title_page {
+      font-size: 50px;
+    }
+  
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .input_intro {
+      font-size: 29px;
+    }
+  
+    textarea{
+      height: 65px;
+    }
+  
+    input {
+      height: 20px;
+    }
+  
+    .input_intro, .buttons {
+      margin: 10px;
+    }
+  }
+  
+  @media (max-height: 680px) and (min-width: 700px){
+    .title_page {
+      font-size: 55px;
+    }
+  
+    .subtitle {
+      font-size: 22px;
+    }
+  
+    .input_intro {
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-height: 680px) and (min-width: 925px){
+    .title_page {
+      font-size: 80px;
+    }
+    
+    .subtitle{
+      font-size: 35px;
+    }
+  
+    .input_intro,.buttons{
+      margin: 20px;
+    }
+  
+    .input_intro{
+      font-size: 50px;
+    }
+  
+    textarea,input {
+      margin: 20px;
+      padding: 20px;
+      width: 600px;
+    }
+  
+    textarea:hover,input:hover {
+      border: 2px solid;
+      padding: 19px;
+    }
+  }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Note Idea</title>
+  </head>
+  <body id="body">
+    <div class="header_of_page">
+      <div class="title_page">Заметки</div>
+      <div class="subtitle">Создавай новые идеи и ставь новые задачи</div>
+    </div>
+    <section class="create_note">
+      <div class="box">
+        <p class="input_intro">Ввод текста</p>
+        <textarea></textarea>
+        <input type="date" />
+        <div class="buttons">
+          <div class="add-btn" onclick="add_note();">Добавить Заметку</div>
+          <div class="clear-btn" onclick="clear_all();">Очистить все</div>
+        </div>
+      </div>
+    </section>
+    <section class="notes_lists" id="all_notes"></section>
+    <script src="main.js"></script>
+  </body>
+</html>
